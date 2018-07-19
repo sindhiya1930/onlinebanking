@@ -9,10 +9,10 @@ node {
    stage('Build') {
       // Run the maven build<appndid>
 
-         sh "mvn clean package -DskipTests=True"
+         sh "clean package -DskipTests=True"
      
    }
    stage('Results') {
-         sh "mvn clean"
+         sh "clean"
    }
 }
